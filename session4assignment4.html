@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Linear & Radial Gradients</title>
+<style>
+#text{
+	font-size: 30px;
+	margin-top: 50px;
+}
+#grad1{
+	margin-left: 500px;
+	height: 150px;
+    width: 150px;
+	float: left;
+	border-radius: 10px;
+	text-align: center;
+	background: -webkit-linear-gradient(red, green, orange); /* For webkit based browser */
+	background: -o-linear-gradient(red, green, orange); /* For Opera */
+	background: -moz-linear-gradient(red, green, orange); /* For Firefox */
+	background: linear-gradient(90deg, red, brown 30%, green); /* Standard syntax */
+}
+#grad2 {
+	margin-left: 20px;
+    height: 150px;
+    width: 150px;
+	float: left;
+	border-radius: 10px;
+	text-align: center;
+    background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(orange, white, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(orange, white, green); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(circle at 50% 10%, red, yellow, green); /* Standard syntax (must be last)*/
+}
+#grad3 {
+	margin-left: 20px;
+    height: 150px;
+    width: 150px;
+	float: left;
+	border-radius: 10px;
+	text-align: center;
+    background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(orange, white, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(orange, white, green); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at 50% -20%, red, yellow, green); /* Standard syntax (must be last)*/
+}
+</style>
+</head>
+<body>
+
+<div id="grad1"><p id="text">Box</p></div>
+<div id="grad2"><p id="text">Box</p></div>
+<div id="grad3"><p id="text">Box</p></div>
+
+</body>
